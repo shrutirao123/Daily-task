@@ -1,0 +1,62 @@
+# Accepting inputs from the user
+year = int(input("Enter a year: "))
+
+# Checking if the year is a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(str(year) + " is a leap year.")  # str(year): Converts year to string for concatenation
+else:
+    print(str(year) + " is not a leap year.")  # str(year): Converts year to string for concatenation
+
+--------------------------------------------------------------------------------------
+
+# Accepting inputs from user
+number1 = int(input("Enter the first number: "))  
+number2 = int(input("Enter the second number: "))  
+number3 = int(input("Enter the third number: ")) 
+
+# Find the largest number
+if number1 >= number2 and number1 >= number3:
+    largest = num1  # number1 is the largest
+elif number2 >= number1 and number2 >= number3:
+    largest = number2  # number2 is the largest
+else:
+    largest = number3  # number3 is the largest
+
+# Output the largest number
+print("The largest number is:", largest)
+
+--------------------------------------------------------------------------------------
+
+# Accepting input number from the user
+num = int(input("Enter a number: "))  # User input
+
+# Checking if the number is positive, negative, or zero
+if num > 0:
+    print("The number is positive.")  # Positive number
+elif num < 0:
+    print("The number is negative.")  # Negative number
+else:
+    print("The number is zero.")  # Zero
+
+--------------------------------------------------------------------------------------
+
+# Accepting product code and order amount
+product_code = int(input("Enter product code (1 for Battery Based, 2 for Key-Based, 3 for Electrical Charging Based): "))
+order_amount = int(input("Enter order amount (Rs.): "))
+
+# Apply discounts based on product code and order amount
+if product_code == 1 and order_amount > 1000:
+    discount = 0.10  # 10% discount for battery-based toys
+elif product_code == 2 and order_amount > 100:
+    discount = 0.05  # 5% discount for key-based toys
+elif product_code == 3 and order_amount > 500:
+    discount = 0.10  # 10% discount for electrical charging-based toys
+else:
+    discount = 0  # No discount
+
+# Calculate final amount after applying discount
+final_amount = order_amount - (order_amount * discount)
+
+# Output the final amount
+print("Final amount to pay: Rs.", round(final_amount,2))
+

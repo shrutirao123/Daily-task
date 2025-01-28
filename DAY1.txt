@@ -1,0 +1,56 @@
+#Accepting inputs from users 
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+# Calculate the sum of the two numbers
+sum_result = num1 + num2
+
+# Calculate the multiplication of the two numbers
+multiplication_result = number1 * number2
+
+# Display the sum of the two numbers
+print("The sum of the two numbers is:", sum_result)
+
+# Display the multiplication of the two numbers
+print("The multiplication of the two numbers is:", multiplication_result)
+
+
+--------------------------------------------------------------------------------------
+
+
+#Accepting inputs from users 
+number1=int(input("Enter the first number: "))
+number2=int(input("Enter the second number: "))
+
+# conditional expression to find the largest number 
+Number=number1 if number1>number2 else number2
+
+# Display the largest number
+print("The Largest Number is: ",Number)
+
+
+--------------------------------------------------------------------------------------
+#Accepting inputs from users 
+celsius = int(input("Enter temperature in Celsius: "))
+
+# Converting the temperature from Celsius to Fahrenheit using the formula
+fahrenheit = (celsius * 9 / 5) + 32
+
+# Display the largest number
+print("Temperature in Fahrenheit:", fahrenheit)
+
+--------------------------------------------------------------------------------------
+#Accepting inputs from users 
+triangle1 = int(input("Enter the first side: "))
+triangle2 = int(input("Enter the second side: "))
+triangle3 = int(input("Enter the third side: "))
+
+# Calculate the semi-perimeter of the trianglle
+side = (triangle1 + triangle2 + triangle3) / 2
+
+#formula to calculate the area of the triangle
+area = (side * (side - triangle1) * (side - triangle2) * (side - triangle3)) ** 0.5
+
+# Display the area of the triangle
+print("The area of the triangle is:", area)
+

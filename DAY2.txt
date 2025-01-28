@@ -1,0 +1,53 @@
+# Accepting input from the user
+number = int(input("Enter a number: "))
+
+# Using ternary operator to check if the number is even or odd
+result = "Even" if number % 2 == 0 else "Odd"
+
+# Printing the result
+print("The number is:",result)
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+# Accepting input for two numbers
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+# Swapping the numbers
+number1, number2 = number2, number1
+
+# Printing the swapped values
+print("After swapping the numbers:")
+print("First number:", number1)
+print("Second number:", number2)
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+# Conversion factor: 1 kilometer is approximately 0.621371 miles
+conversion_factor = 0.621371
+
+# Input from the user
+kilometers = int(input("Enter distance in kilometers: "))
+
+# Convert kilometers to miles
+miles = kilometers * conversion_factor
+
+print(str(kilometers) + " kilometers is equal to " + str(round(miles)) + " miles.")# Using string concatenation for the output also It converts numbers to strings and adding them to the sentence
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+#Accepting Inputs from users
+principal = float(input("Enter the principal amount (Rs.): "))
+rate = float(input("Enter the annual interest rate (%): "))
+time = float(input("Enter the time (in years): "))
+
+# Calculate Simple Interest
+simple_interest = (principal * rate * time) / 100
+
+print("The Simple Interest is:",simple_interest)

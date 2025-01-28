@@ -1,0 +1,56 @@
+# Define the Div function
+def div(number1, number2): 
+    if number2 == 0: 
+        return "Cannot divide by zero"
+    return number1 / number2 
+
+# Taking inputs from the user
+number1 = float(input("Enter the numerator: "))  # Input numerator
+number2 = float(input("Enter the denominator: "))  # Input denominator
+
+# Displaying the result
+print("The result of the division is:", div(number1, number2))
+
+--------------------------------------------------------------------------------------
+
+# Define the square function
+def square(number):
+    return number * number
+
+# Taking input from the user
+number = int(input("Enter a number to find its square: "))
+
+# Call the function and display the result
+print("The square of the number is:", square(number))
+
+--------------------------------------------------------------------------------------
+
+# Taking 5 numbers as input from the user in a single line
+numbers = list(map(int, input("Enter 5 numbers separated by spaces: ").split()))
+
+# Find and display the maximum and minimum
+print("The maximum number is:", max(numbers))
+print("The minimum number is:", min(numbers))
+
+--------------------------------------------------------------------------------------
+
+# Taking name input from the user
+name = input("Enter your name: ")
+
+# Display the name in lowercase
+print("Your name in lowercase is:", name.lower())
+
+--------------------------------------------------------------------------------------
+
+# Lambda function to check if the number is positive, negative, or zero
+check_number = lambda number: (
+    'Positive' if number > 0 
+    else 'Negative' if number < 0 
+    else 'Zero'
+)
+
+# Taking input from the user
+number = float(input("Enter a number: "))
+
+# Display the result based on the input
+print(check_number(number))

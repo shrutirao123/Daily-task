@@ -1,0 +1,59 @@
+#Import the Counter class from the collections module
+from collections import Counter
+
+# Accept input from the user
+string = input("Enter a sentence: ")
+
+# Split the string into words
+words = string.split()
+
+# Count occurrences of each word using Counter
+word_count = Counter(words)
+
+# Print the word count
+for word, count in word_count.items():
+    print(f"{word}: {count}")
+
+
+--------------------------------------------------------------------------------------
+
+# input string with newlines
+my_string = "\nBest \nDeeptech \nPython \nTraining\n"
+
+# Remove all newlines using replace()
+new_string = my_string.replace("\n", " ")  # Replaces newline with space
+print("cleaned_string:",new_string )
+
+
+--------------------------------------------------------------------------------------
+
+
+# Accept input string from the user
+my_string = input("Enter a string: ")
+
+# Split the string into words, reverse the list, and join the words back into a string
+reversed_string = ' '.join(my_string.split()[::-1])
+
+# Print the reversed string
+print("Reversed words:", reversed_string)
+
+
+--------------------------------------------------------------------------------------
+
+
+# Accept input string from the user
+my_string = input("Enter a string: ")
+
+# Define a list of vowels
+vowels = "aeiouAEIOU"
+
+# Initialize a variable to count vowels
+vowel_count = 0
+
+# Loop through the string and count the vowels
+for char in my_string:
+    if char in vowels:
+        vowel_count += 1
+
+# Display the total count of vowels
+print("Total vowels:", vowel_count)
