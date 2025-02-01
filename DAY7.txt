@@ -1,0 +1,97 @@
+# Accept string input from the user
+my_string = input("Enter a string: ")
+
+# Initialize counters for letters, digits, and symbols
+chars = 0
+digits = 0
+symbols = 0
+
+# Iterating through each character in the string
+for char in my_string:
+    if char.isalpha():
+        chars += 1  # Counting letters
+    elif char.isdigit():
+        digits += 1  # Counting digits
+    else:
+        symbols += 1  # Counting special symbols
+
+# print the results
+print(f"Chars = {chars}")
+print(f"Digits = {digits}")
+print(f"Symbols = {symbols}")
+
+
+--------------------------------------------------------------------------------------
+
+
+# Accept string input from the user
+my_input = input("Enter a string: ")
+
+# Split the input string into words
+words = my_input.split()
+
+# defining an empty list to store unique words
+unique_words = []
+
+# Iterate through each word in the list
+for word in words:
+    # If the word hasn't been encountered before
+    if word not in unique_words:
+        unique_words.append(word)  # Add it to the list
+
+# Join the unique words back into a string
+result = " ".join(unique_words)
+
+# printing the result
+print("Output:", result)
+
+
+--------------------------------------------------------------------------------------
+
+
+# Accept string input from the user
+user_input = input("Enter a string: ")
+
+# defining counters for uppercase, lowercase, digits, and special characters
+uppercase = 0
+lowercase = 0
+digits = 0
+special_chars = 0
+
+# Iterate through each character in the string
+for char in user_input:
+    if char.isupper():
+        uppercase += 1  # Count uppercase letters
+    elif char.islower():
+        lowercase += 1  # Count lowercase letters
+    elif char.isdigit():
+        digits += 1  # Count digits
+    else:
+        special_chars += 1  # Count special characters
+
+# Printing the results
+print("UpperCase:", uppercase)
+print("LowerCase:", lowercase)
+print("NumberCase:", digits)
+print("SpecialCase:", special_chars)
+
+
+--------------------------------------------------------------------------------------
+
+
+# Accept string input from the user
+user_input = input("Enter a string: ")
+
+# Define a string containing all vowels (both uppercase and lowercase)
+vowels = "aeiouAEIOU"
+
+# Initialize a counter for vowels
+vowel_count = 0
+
+# Iterate through each character in the string
+for char in user_input:
+    if char in vowels:
+        vowel_count += 1  # Increment the counter if the character is a vowel
+
+# Printing the result
+print("Total vowels are:", vowel_count)
